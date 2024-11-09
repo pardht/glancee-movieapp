@@ -8,7 +8,7 @@ import GenreItem from './GenreItem'
 
 export default function Navbar() {
     return (
-        <div className='w-full h-[60px] fixed flex justify-center items-center mt-2'>
+        <div className='w-full h-[60px] fixed flex justify-center items-center mt-2 z-50'>
             <div className='w-full max-w-[1280px] h-full flex justify-between items-center px-4  gap-10 rounded-full bg-[#707070]/80 backdrop-blur-2xl shadow-md shadow-black/25'>
                 <div className='flex items-center gap-2'>
                     <Link href="/">

@@ -16,8 +16,8 @@ export default async function Home({ searchParams }) {
   const results = data.results;
   console.log(results);
   return (
-    <div className='w-full h-[200vh] bg-amber-500 text-lg no-scrollbar'>
-      <div className='w-[20px]'>
+    <div className='w-full h-auto flex justify-center bg-[#4a4a4a]'>
+      <div className='w-full max-w-[1280px] h-full'>
         <Results results={results}/>
       </div>
     </div>
