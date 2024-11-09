@@ -1,11 +1,24 @@
+import Results from '@/components/Results';
 import React from 'react'
 
-export default function Home() {
+const API_KEY = process.env.API_KEY;
+
+export default async function Home({ searchParams }) {
+  const genre = searchParams.genre || 'fetchTrending';
+  const res = await fetch(
+    `https://api.themoviedb.org/3${genre === 'fetchTopRated' ? `/movie/top_rated` : `/trending/all/week`
+    }?api_key=${API_KEY}&language=en-US&page=1`
+  )
+  const data = await res.json();
+  if (!res.ok) {
+    throw new Error('Oops! Something went wrong.');
+  }
+  const results = data.results;
+  console.log(results);
   return (
     <div className='w-full h-[200vh] bg-amber-500 text-lg no-scrollbar'>
       <div className='w-[20px]'>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. In facilis repellendus magni quos fugiat voluptate, maxime excepturi nulla suscipit. Expedita temporibus omnis sunt iusto laborum assumenda ipsum cupiditate optio, mollitia rem amet, error minima, modi a. Quam excepturi exercitationem aut. Sit, perferendis? Rem ipsam vitae, dolor velit itaque mollitia non!
-
+        <Results results={results}/>
       </div>
     </div>
   )
