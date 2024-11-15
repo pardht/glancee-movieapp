@@ -5,13 +5,13 @@ import React from 'react'
 export default function Card({ result }) {
     return (
         <Link href={`/movie/${result.id}`}>
-            <div className='  bg-black/40 rounded-[20px] hover:opacity-80 duration-200 relative flex'>
-                < Image
+            <div className='bg-black/40 rounded-[20px] duration-200 relative flex'>
+                <Image
                     src={`https://image.tmdb.org/t/p/original/${result.poster_path}`}
                     alt='poster'
                     width={10000}
                     height={10000}
-                    className='w-full h-full  rounded-[20px] flex'
+                    className='w-full h-full rounded-[20px] flex'
                 />
 
 

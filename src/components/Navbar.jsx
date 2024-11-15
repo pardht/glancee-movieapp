@@ -3,8 +3,10 @@ import MenuItem from './MenuItem'
 import { AiFillHome } from 'react-icons/ai'
 import { BsFillInfoCircleFill } from 'react-icons/bs'
 import { FaBullseye } from 'react-icons/fa'
+import { IoSearchOutline } from 'react-icons/io5'
 import Link from 'next/link'
 import GenreItem from './GenreItem'
+import Search from './Search'
 
 export default function Navbar() {
     return (
@@ -19,9 +21,12 @@ export default function Navbar() {
                         <MenuItem title="About" Icon={BsFillInfoCircleFill} address="/about" />
                     </div>
                 </div>
+                <div>
+                    <Search Icon={IoSearchOutline} />
+                </div>
                 <div className='flex gap-10'>
-                    <GenreItem title="Trending" param="fetchTrending"/>
-                    <GenreItem title="Top Rated" param="fetchTopRated"/>
+                    <GenreItem title="Trending" param="fetchTrending" />
+                    <GenreItem title="Top Rated" param="fetchTopRated" />
                 </div>
             </div>
         </div>
