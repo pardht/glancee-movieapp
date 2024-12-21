@@ -1,29 +1,38 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { FaPlay } from 'react-icons/fa'
 
 export default function Card({ result }) {
     return (
         <Link href={`/movie/${result.id}`}>
-            <div className='bg-black/40 rounded-[20px] duration-200 relative flex'>
+            <div className='bg-black/40 rounded-[30px] duration-200 relative flex group hover:brightness-125'>
                 <Image
                     src={`https://image.tmdb.org/t/p/original/${result.poster_path}`}
                     alt='poster'
                     width={10000}
                     height={10000}
-                    className='w-full h-full rounded-[20px] flex'
+                    className='w-full h-full rounded-[30px] flex'
                 />
-
-
-                <div className='w-full h-[50%] absolute  p-6 bottom-0 flex flex-col space-y-2  justify-end rounded-b-[20px] bg-gradient-to-t from-black/90 via-black/70 to-transparent  '>
-                    <p className='text-white font-semibold '>
-                        {result.original_title}
-                    </p>
-                    <p className='line-clamp-2 text-white/70 text-sm font-light tracking-wide'>
-                        {result.overview}
-                    </p>
+                <div className='w-full h-[50%] absolute  p-6 bottom-0 flex  items-end rounded-b-[30px] bg-gradient-to-t from-black/90 via-black/70 to-transparent '>
+                    <div className='grid grid-cols-3 space-y-3'>
+                        <div className=' col-span-3'>
+                            <p className='text-white font-semibold '>
+                                {result.original_title}
+                            </p>
+                        </div>
+                        <div className=' col-span-2'>
+                            <p className='line-clamp-3 text-white/70 text-[13px] font-light tracking-wide'>
+                                {result.overview}
+                            </p>
+                        </div>
+                        <div className=' col-span-1 flex items-end justify-end'>
+                            <div className='p-4 bg-white rounded-full flex items-center justify-center group  group-hover:scale-110  transition-all'>
+                                <FaPlay size={15} className='fill-black ' />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </Link>
     )
