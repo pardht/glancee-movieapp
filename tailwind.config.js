@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'blur-room' : "url('/background/living-roomblurred.jpg')",
+      }
     },
   },
   plugins: [],
