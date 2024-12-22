@@ -25,8 +25,8 @@ export default function Search({ Icon }) {
                     value={search} 
                     onChange={(e) => setSearch(e.target.value)} 
                     type="text" name="" id="" 
-                    placeholder='Search' 
-                    className='w-full h-full bg-transparent outline-none font-light placeholder-white/50' />
+                    placeholder='Search movies' 
+                    className='w-full h-full bg-transparent outline-none font-extralight placeholder-white/80' />
                 </div>
             </div>
         </form>
