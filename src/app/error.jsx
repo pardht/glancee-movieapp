@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 
-export default function error({error, reset}) {
+export default function Error({error, reset}) {
     useEffect(() => {
         console.log(error);
     },[error]);
