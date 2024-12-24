@@ -8,7 +8,7 @@ export default async function SearchPage({ params }) {
     const data = await res.json();
     const results = data.results;
     return (
-        <div className='w-full h-auto flex justify-center bg-blur-room bg-cover bg-no-repeat bg-fixed'>
+        <div className='w-full h-auto min-h-screen flex justify-center bg-blur-room bg-cover bg-no-repeat bg-fixed'>
             <div className='w-full h-auto flex justify-center bg-zinc-600/50 '>
                 <div className='w-full px-[32px]'>
                     {results &&
