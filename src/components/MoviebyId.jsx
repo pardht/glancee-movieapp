@@ -43,7 +43,7 @@ export default async function MoviebyId({ params }) {
                 </div>
                 <div className='w-full h-auto bg-[#3d3d3d]/30 shadow-md backdrop-blur-2xl shadow-black/25 flex flex-col rounded-[50px] p-10'>
                     <MovieDetails movie={movie} Link={Link} Image={Image} FaPlay={FaPlay}/>
-                    <div className='my-10'>
+                    <div className='mt-10'>
                         <div className='flex overflow-x-scroll gap-3  scroll-pl-2 snap-x cursor-grab'>
                             <Caster movie={movie} Image={Image}/>
                         </div>
