@@ -21,8 +21,7 @@ export default function MovieDetails({ movie, Link, Image, FaPlay }) {
                         <div className='flex flex-wrap gap-2'>
                             {movie.genres.map((genre) => (
                                 <div key={genre.id} className='bg-zinc-100/20 px-5 py-3 rounded-full'>
-
-                                    <p className='text-sm'>{genre.name}</p>
+                                    <p className='text-sm font-light'>{genre.name}</p>
                                 </div>
                             ))}
                         </div>
@@ -40,19 +39,19 @@ export default function MovieDetails({ movie, Link, Image, FaPlay }) {
                         <div className='space-y-2 '>
                             <div className='flex gap-1'>
                                 <p className='p-3 px-4 bg-zinc-100/20 rounded-lg text-sm text-[#FFBB00] font-semibold'>{movie.status}</p>
-                                <p className='p-3 px-4 bg-zinc-100/20 rounded-lg text-sm font-extralight text-[#FFBB00]'>  {movie.release_date}</p>
+                                <p className='p-3 px-4 bg-zinc-100/20 rounded-lg text-sm font-light text-[#FFBB00]'>  {movie.release_date}</p>
                                 <div className='flex gap-1'>
-                                    <p className='px-3 bg-zinc-100/20 rounded-lg text-sm font-extralight flex items-center gap-1 text-[#FFBB00]'>
+                                    <p className='px-3 bg-zinc-100/20 rounded-lg text-sm font-light flex items-center gap-1 text-[#FFBB00]'>
                                         <IoMdTime size={20} className='fill-[#FFBB00]' />
                                         {movie.runtime}mins</p>
                                 </div>
                             </div>
                         </div>
                         <div className='flex gap-1'>
-                            <div className='p-3 bg-zinc-100/20 flex gap-2 rounded-full text-sm font-extralight'>
+                            <div className='p-3 bg-zinc-100/20 flex gap-2 rounded-full text-sm'>
                                 <AiOutlineProduct size={20} className='fill-[#FFBB00]' />
                             </div>
-                            <div className='p-3 px-4 bg-zinc-100/20 flex gap-2 rounded-lg text-sm font-extralight'>
+                            <div className='p-3 px-4 bg-zinc-100/20 flex gap-2 rounded-lg text-sm font-light'>
                                 {movie.production_countries.map((production) => (
                                     <div key={production.name} className=''>
                                         <p className='text-md'>{production.name}</p>
@@ -61,11 +60,11 @@ export default function MovieDetails({ movie, Link, Image, FaPlay }) {
                             </div>
                         </div>
                         <div className='flex gap-1'>
-                            <div className='p-3 bg-zinc-100/20 flex gap-2 rounded-full text-sm font-extralight'>
+                            <div className='p-3 bg-zinc-100/20 flex gap-2 rounded-full text-sm'>
                                 <HiLanguage size={20} className='fill-[#FFBB00]' />
                             </div>
 
-                            <div className='p-3 px-4 bg-zinc-100/20 flex gap-2 rounded-lg text-sm font-extralight'>
+                            <div className='p-3 px-4 bg-zinc-100/20 flex gap-2 rounded-lg text-sm font-light'>
                                 {movie.spoken_languages.map((language) => (
                                     <div key={language.name} className=''>
                                         <p className='text-md'>{language.name}</p>
