@@ -27,10 +27,10 @@ export default function MovieDetails({ movie, Link, Image, FaPlay }) {
                         </div>
                         <div className='space-y-2'>
                             <p className='text-3xl font-semibold'>{movie.original_title}</p>
-                            <p className='text-base font-extralight text-white/70 line-clamp-6'>{movie.overview}</p>
+                            <p className='text-base font-light text-white/70 line-clamp-6'>{movie.overview}</p>
                         </div>
                         <div>
-                            <p className='text-base font-extralight text-white/70'>{movie.tagline}</p>
+                            <p className='text-base font-light text-white/70'>{movie.tagline}</p>
                         </div>
                     </div>
 
@@ -38,7 +38,7 @@ export default function MovieDetails({ movie, Link, Image, FaPlay }) {
                     <div className='space-y-2 '>
                         <div className='space-y-2 '>
                             <div className='flex gap-1'>
-                                <p className='p-3 px-4 bg-zinc-100/20 rounded-lg text-sm text-[#FFBB00] font-semibold'>{movie.status}</p>
+                                <p className='p-3 px-4 bg-zinc-100/20 rounded-lg text-sm text-[#FFBB00] '>{movie.status}</p>
                                 <p className='p-3 px-4 bg-zinc-100/20 rounded-lg text-sm font-light text-[#FFBB00]'>  {movie.release_date}</p>
                                 <div className='flex gap-1'>
                                     <p className='px-3 bg-zinc-100/20 rounded-lg text-sm font-light flex items-center gap-1 text-[#FFBB00]'>
