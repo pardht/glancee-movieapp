@@ -5,14 +5,7 @@ import { FaPlay } from 'react-icons/fa'
 const Blank = () => {
     return (
         <div className='col-span-1'>
-            <div className='rounded-[30px] duration-200 relative flex'>
-                <Image
-                    src="/assets/blank.jpg"
-                    alt='poster'
-                    width={10}
-                    height={10}
-                    className='w-full h-full rounded-[30px] flex opacity-20 animate-pulse'
-                />
+            <div className='w-[100%] pt-[150%] bg-black/40 rounded-[30px] duration-200 relative flex'>
                 <div className='w-full h-[50%] absolute  p-6 bottom-0 flex  items-end rounded-[30px] bg-gradient-to-t from-black/40 via-black/20  animate-pulse '>
                     <div className='w-full grid grid-cols-3 space-y-3'>
                         <div className=' col-span-3'>
