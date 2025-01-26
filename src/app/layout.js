@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import {Poppins} from "next/font/google"
 
 export const metadata = {
-  title: "Glancee",
+  title: "Glancee - List your favorite movie",
   description: "A movie app",
 };
 
