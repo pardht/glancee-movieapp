@@ -19,10 +19,6 @@ export default async function Home({ searchParams }) {
     throw new Error('Oops! Something went wrong.');
   }
   const results = data.results;
-//   if (!results) {
-//     return <div>Loading...</div>;
-// }
-  // console.log(results);
   return (
     <div className='w-full h-auto flex justify-center bg-blur-room bg-cover bg-no-repeat bg-fixed'>
       <div className='w-full h-auto flex justify-center bg-zinc-600/50 '>
