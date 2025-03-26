@@ -26,7 +26,6 @@ export default async function MoviebyId({ params }) {
     } catch (error) {
         console.error("Error fetching videos:", error);
     }
-    // console.log(movie)
     return (
         <div className='w-full h-auto min-h-screen flex  flex-col items-center bg-[#707070]/50 '>
             <Image

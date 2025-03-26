@@ -4,7 +4,6 @@ import React from 'react'
 import { FaPlay } from 'react-icons/fa'
 
 export default function Card({ result }) {
-    // console.log(result)
     return (
         <Link href={`/movie/${result.id}`}>
             <div className=' bg-black/40 rounded-[30px] duration-500 relative flex group hover:brightness-125 group transition-all'>

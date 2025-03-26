@@ -14,9 +14,6 @@ export default function Navbar() {
         <div className='w-full h-[60px] fixed flex justify-center items-center mt-2 z-50 px-8'>
             <div className='w-full  h-full flex justify-between items-center px-[10px] gap-4  rounded-full bg-[#707070]/20 backdrop-blur-2xl shadow-md shadow-black/25'>
                 <div className=' flex-1  items-center gap-2'>
-                    {/* <Link href="/">
-                        <FaBullseye size={30} className='fill-[#FFBB00]' />
-                    </Link> */}
                     <div className=' '>
                         <Search/>
                     </div>
@@ -31,7 +28,6 @@ export default function Navbar() {
                 <div className='flex items-center gap-2'>
                     <div className='flex items-center  gap-2 '>
                         <MenuItem title="" Icon={BsFillInfoCircleFill} address="/about" size="20" />
-                        {/* <MenuItem title="Glancee" Icon={FaBullseye} address="/" size="20" /> */}
                     </div>
                     <Link href="/">
                         <div className='w-[180px] flex justify-between items-center bg-white/10 py-[5px] px-3 rounded-full group'>
